@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="290dp"
+        android:background="@android:color/darker_gray"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <LinearLayout
+        android:id="@+id/upper_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/team1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/result_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:text="@string/_0"
+                android:textSize="64sp">
+            </TextView>
+
+            <Button
+                android:id="@+id/a_3point"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#FF8F00"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                android:paddingHorizontal="36dp"
+                android:text="@string/_3_points"
+                android:layout_marginStart="16dp" />
+
+            <Button
+                android:id="@+id/a_2point"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#FF8F00"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                android:paddingHorizontal="36dp"
+                android:text="@string/_2_points"
+                />
+            <Button
+                android:id="@+id/a_free"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#FF8F00"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:layout_marginLeft="16dp"
+                android:paddingHorizontal="28dp"
+                android:text="@string/free_throw"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:orientation="vertical"
+            android:layout_marginStart="64dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/team2" />
+
+            <TextView
+                android:id="@+id/result_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:text="@string/_0"
+                android:textSize="64sp" />
+
+            <Button
+                android:id="@+id/b_3point"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="#FF8F00"
+                android:textAllCaps="true"
+                android:textSize="12sp"
+                android:layout_marginRight="16dp"
+                android:paddingHorizontal="36dp"
+                android:text="@string/_3_points"
+                android:layout_marginEnd="16dp">
+            </Button>
+
+            <Button
+                android:id="@+id/b_2point"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="12sp"
+                android:layout_marginRight="16dp"
+                android:paddingHorizontal="36dp"
+                android:text="@string/_2_points"
+                android:background="#FF8F00"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/b_free"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingHorizontal="28dp"
+                android:textSize="12sp"
+                android:paddingVertical="2dp"
+                android:layout_marginRight="16dp"
+                android:background="#FF8F00"
+                android:text="@string/free_throw"
+                android:layout_marginEnd="16dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/upper_linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:paddingHorizontal="32dp"
+        android:background="#FF8F00"
+        android:text="@string/reset"
+        android:textSize="12sp"
+        android:textAllCaps="true">
+
+    </Button>
+</RelativeLayout>
